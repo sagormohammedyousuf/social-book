@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./main.js"></script>
+    <title>Profile-Page-Social-Book</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- nav started -->
+      <nav>
+        <div class="nav-left">
+          <a href="index.html">
+            <img class="logo" src="img/logo.png">
+          </a>
+
+          <ul>
+            <li><img src="img/notification.png" alt="" /></li>
+            <li><img src="img/inbox.png" alt="" /></li>
+            <li><img src="img/video.png" alt="" /></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <div class="search-box">
+            <img src="img/search.png" />
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="nav-user-icon online" onclick="settingsMenuToggle(this)">
+            <img src="img/profile-pic.png" alt="profile-pic" />
+          </div>
+        </div>
+
+        <!-- settings-menu -->
+        <div class="settings-menu">
+          <div id="dark-btn" class="dark-btn-on">
+            <span></span>
+          </div>
+
+          <div class="settings-menu-inner">
+            <!-- profile -->
+            <div class="user-profile">
+              <img src="img/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <a href="#">See your profile</a>
+              </div>
+            </div>
+            <hr />
+            <!-- feedback -->
+            <div class="user-profile">
+              <img src="img/feedback.png" alt="" />
+              <div>
+                <p>Give Feedback</p>
+                <a href="#">Help us to improve the new design</a>
+              </div>
+            </div>
+            <hr />
+
+            <!-- setting links -->
+            <div class="settings-links">
+              <img src="img/setting.png" alt="" class="setting-icon" />
+              <a href=""
+                >Setting & Privacy<img src="img/arrow.png" alt="" width="10px"
+              /></a>
+            </div>
+
+            <div class="settings-links">
+              <img src="img/help.png" alt="" class="setting-icon" />
+              <a href=""
+                >Help & Support<img src="img/arrow.png" alt="" width="10px"
+              /></a>
+            </div>
+
+            <div class="settings-links">
+              <img src="img/display.png" alt="" class="setting-icon" />
+              <a href=""
+                >Display & Accessibility<img
+                  src="img/arrow.png"
+                  alt=""
+                  width="10px"
+              /></a>
+            </div>
+
+            <div class="settings-links">
+              <img src="img/logout.png" alt="" class="setting-icon" />
+              <a href=""
+                >Logout<img src="img/arrow.png" alt="" width="10px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--  nav is closed -->
+
+      <!-- profile page started here  -->
+
+      <div class="profile-container">
+        <img src="img/cover.png" alt="" class="cover-img" />
+        <div class="profile-details">
+          <div class="pd-left">
+            <div class="pd-row">
+              <img src="img/profile.png" class="pd-img" />
+              <div>
+                <h3>Jackson Nicholson</h3>
+                <p>120 Friends - 20 mutual</p>
+                <img src="img/member-1.png" />
+                <img src="img/member-2.png" />
+                <img src="img/member-3.png" />
+                <img src="img/member-5.png" />
+              </div>
+            </div>
+          </div>
+          <div class="pd-right">
+            <button><img src="img/add-friends.png" />Friends</button>
+            <button><img src="img/message.png" />Message</button>
+            <br />
+            <a href=""><img src="img/more.png" /></a>
+          </div>
+        </div>
+
+        <div class="profile-info">
+          <div class="info-col">
+            <div class="profile-intro">
+                <h3>Intro</h3>
+                <p class="intro-text">Believe in yourself and you can do unbelievable things.<img src="img/feeling.png"></p>
+                <hr>
+                <ul>
+                  <li><img src="img/profile-job.png"> Ceo at Bohemian - On The Road</li>
+                  <li><img src="img/profile-study.png">Studied at Daffodil University</li>
+                  <li><img src="img/profile-study.png">Went to Dhaka City College</li>
+                  <li><img src="img/profile-home.png">Lives in Malibag , Dhaka</li>
+                  <li><img src="img/profile-location.png">From Gaibandha , Bangladesh</li>
+                </ul>
+            </div>
+
+            <!-- <-- ------- photo box ------- --> 
+            <div class="profile-intro">
+              <div class="title-box">
+                <h3>Photos</h3>
+                <a>All Photos</a>
+              </div>
+              
+              <div class="photo-box">
+                <div><img src="img/photo1.png" alt=""></div>
+                <div><img src="img/photo2.png" alt=""></div>
+                <div><img src="img/photo3.png" alt=""></div>
+                <div><img src="img/photo4.png" alt=""></div>
+                <div><img src="img/photo5.png" alt=""></div>
+                <div><img src="img/photo6.png" alt=""></div>
+              </div>
+            </div>
+
+ <!-- <-- ------- friend list ------- --> 
+            <div class="profile-intro">
+              <div class="title-box">
+                <h3>Friends</h3>
+                <a>All Friends</a>
+              </div>
+              <p>129 (10 mutual)</p>
+              <div class="friends-box">
+                <div><img src="img/member-1.png" alt=""><p>Eva Green</p></div>
+                <div><img src="img/member-2.png" alt=""><p>Nathan Mark</p></div>
+                <div><img src="img/member-3.png" alt=""><p>George Dilpo</p></div>
+                <div><img src="img/member-4.png" alt=""><p>Michael Jackson</p></div>
+                <div><img src="img/member-5.png" alt=""><p>Anthony Eil</p></div>
+                <div><img src="img/member-6.png" alt=""><p>Augst Emus</p></div>
+                <div><img src="img/member-7.png" alt=""><p>Edward Mosh</p></div>
+                <div><img src="img/member-8.png" alt=""><p>Bradon Clim</p></div>
+                <div><img src="img/member-9.png" alt=""><p>James Doe</p></div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="post-col">
+            <!-- post section  -->
+            <div class="write-post-container">
+              <div class="user-profile">
+                <img src="img/profile-pic.png" alt="" />
+                <div>
+                  <p>John Nicholson</p>
+                  <small>Public <i class="fas fa-caret-down"></i></small>
+                </div>
+              </div>
+
+              <div class="post-input-container">
+                <textarea
+                  rows="3"
+                  placeholder="What's on your mind , John?"
+                ></textarea>
+                <div class="add-post-links">
+                  <a href=""
+                    ><img src="img/live-video.png" alt="" /> Live Video</a
+                  >
+                  <a href=""><img src="img/photo.png" alt="" /> Photo/Video</a>
+                  <a href=""
+                    ><img src="img/feeling.png" alt="" /> Feling/Activity</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 1st post  -->
+            <div class="post-container">
+              <div class="post-row">
+                <div class="user-profile">
+                  <img src="img/profile-pic.png" alt="" />
+                  <div>
+                    <p>John Nicholson</p>
+                    <span>March 20 2023, 13:40 pm</span>
+                  </div>
+                </div>
+                <a href=""><i class="fas fa-ellipsis-v"></i></a>
+              </div>
+              <p class="post-text">
+                subcribe <span>@Bohemian On The Road</span> Youtube channel to
+                watch more videos on Adventure and Cycling
+                <a href="youtube.com/@BohemianOnTheRoad"
+                  >#Bohemian On The Road</a
+                >
+                <a>#YoutubeChannel</a>
+              </p>
+              <img src="img/bicycle.jpg" alt="" class="post-img" />
+              <div class="post-row">
+                <div class="activity-icons">
+                  <div><img src="img/like-blue.png" alt="" />143</div>
+                  <div><img src="img/comments.png" alt="" />76</div>
+                  <div><img src="img/share.png" alt="" />19</div>
+                </div>
+                <div class="post-profile-icon">
+                  <img src="img/profile-pic.png" />
+                  <i class="fas fa-caret-down"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- second post  -->
+
+            <div class="post-container">
+              <div class="post-row">
+                <div class="user-profile">
+                  <img src="img/profile-pic.png" alt="" />
+                  <div>
+                    <p>John Nicholson</p>
+                    <span>April 23 2022, 10:22 am</span>
+                  </div>
+                </div>
+                <a href=""><i class="fas fa-ellipsis-v"></i></a>
+              </div>
+              <p class="post-text">
+                Like and Share this video with Friends<span
+                  >@Bohemian On The Road</span
+                >
+                facebook page on your post. Ask your in the comments
+                <a href="youtube.com/@BohemianOnTheRoad"
+                  >#Bohemian On The Road</a
+                >
+                <a>#YoutubeChannel</a>
+              </p>
+              <img src="img/feed-image-1.png" alt="" class="post-img" />
+              <div class="post-row">
+                <div class="activity-icons">
+                  <div><img src="img/like-blue.png" alt="" />43</div>
+                  <div><img src="img/comments.png" alt="" />6</div>
+                  <div><img src="img/share.png" alt="" />1</div>
+                </div>
+                <div class="post-profile-icon">
+                  <img src="img/profile-pic.png" />
+                  <i class="fas fa-caret-down"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3rd post  -->
+
+            <div class="post-container">
+              <div class="post-row">
+                <div class="user-profile">
+                  <img src="img/profile-pic.png" alt="" />
+                  <div>
+                    <p>John Nicholson</p>
+                    <span>Nov 02 2021, 01:36 pm</span>
+                  </div>
+                </div>
+                <a href=""><i class="fas fa-ellipsis-v"></i></a>
+              </div>
+              <p class="post-text">
+                Follow <span>@Bohemian On The Road</span> Facebook page to
+                updates on Adventure and hiking related posts
+                <a href="youtube.com/@BohemianOnTheRoad"
+                  >#Bohemian On The Road</a
+                >
+                <a>#YoutubeChannel</a>
+              </p>
+              <img src="img/feed-image-2.png" alt="" class="post-img" />
+              <div class="post-row">
+                <div class="activity-icons">
+                  <div><img src="img/like-blue.png" alt="" />14</div>
+                  <div><img src="img/comments.png" alt="" />7</div>
+                  <div><img src="img/share.png" alt="" />9</div>
+                </div>
+                <div class="post-profile-icon">
+                  <img src="img/profile-pic.png" />
+                  <i class="fas fa-caret-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>CopyRight 2023 - Social-Book</p>
+      </footer>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/7b92fc10da.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

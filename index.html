@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script defer  src="./main.js"></script>
+    <title>Social-Book</title>
+    
+  </head>
+  <body>
+    <div id="app">
+     
+       <!-- nav started -->
+      <nav>
+        <div class="nav-left">
+          <a href="index.html">
+            <img class="logo" src="img/logo.png">
+          </a>
+
+          <ul>
+            <li><img src="img/notification.png" alt=""></li>
+            <li><img src="img/inbox.png" alt=""></li>
+            <li><img src="img/video.png" alt=""></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <div class="search-box">
+            <img src="img/search.png">
+            <input type="text" placeholder="Search">
+          </div>
+          <div class="nav-user-icon online" onclick="settingsMenuToggle(this)">
+            <img src="img/profile-pic.png" alt="profile-pic">
+          </div>
+        </div>
+
+         <!--dropdown settings-menu -->
+        <div class="settings-menu">
+
+          <div id="dark-btn"  class="dark-btn-on">
+            <span></span>
+          </div>
+
+          <div class="settings-menu-inner">
+                      <!-- profile -->
+          <div class="user-profile">
+            <a href="profile.html"><img src="img/profile-pic.png" alt=""></a>
+            <div>
+              <p>John Nicholson</p>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+           <hr>
+          <!-- feedback -->
+          <div class="user-profile">
+            <img src="img/feedback.png" alt="">
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr>
+
+          <!-- setting links -->
+          <div class="settings-links">
+            <img src="img/setting.png" alt="" class="setting-icon">
+            <a href="" >Setting & Privacy<img src="img/arrow.png" alt="" width="10px"></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="img/help.png" alt="" class="setting-icon">
+            <a href="" >Help & Support<img src="img/arrow.png" alt="" width="10px"></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="img/display.png" alt="" class="setting-icon">
+            <a href="" >Display & Accessibility<img src="img/arrow.png" alt="" width="10px"></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="img/logout.png" alt="" class="setting-icon">
+            <a href="" >Logout<img src="img/arrow.png" alt="" width="10px"></a>
+          </div>
+
+          </div>
+
+
+
+        </div>
+
+      </nav>
+      <!--  nav is closed -->
+    
+      <!-- container started -->
+      <div class="container">
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+          <div class="imp-links">
+            <a href="#news"><img src="img/news.png" alt="news">Latest News</a>
+            <a href="#friends"><img src="img/friends.png" alt="friends">Friends</a>
+            <a href="#group"><img src="img/group.png" alt="group">Group</a>
+            <a href="#marketplace"><img src="img/marketplace.png" alt="marketplace">Marketplace</a>
+            <a href="#watch"><img src="img/watch.png" alt="watch">watch</a>
+            <a>See More</a>
+          </div>
+          <div class="shortcut-links">
+            <p>Your Shortcuts</p>
+            <a>
+              <img src="img/shortcut-1.png">
+              Web Developer
+            </a>
+            <a>
+              <img src="img/shortcut-2.png">
+              Web Design Course
+            </a>
+            <a>
+              <img src="img/shortcut-3.png">
+              Full Stack Development
+            </a>
+            <a>
+              <img src="img/shortcut-4.png">
+              Software Developer
+            </a>
+          </div>
+        </div>
+        <!-- main-content -->
+        <div class="main-content">
+
+          <!-- story section   -->
+          <div class="story-gallery">
+            <div class="story story-1">
+              <img src="img/upload.png">
+              <p>Post Story</p>
+            </div>
+            <div class="story story-2">
+              <img src="img/member-1.png">
+              <p>Alison</p>
+            </div>
+            <div class="story story-3">
+              <img src="img/member-2.png">
+              <p>Jackson</p>
+            </div>
+            <div class="story story-4">
+              <img src="img/member-3.png">
+              <p>Sam</p>
+            </div>
+            <div class="story story-5">
+              <img src="img/member-4.png">
+              <p>Yousuf</p>
+            </div>
+          </div>
+          <!-- post section  -->
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="img/profile-pic.png" alt="">
+              <div>
+                <p>John Nicholson</p>
+                <small>Public <i class="fas fa-caret-down"></i></small>
+              </div>
+            </div>
+
+            <div class="post-input-container">
+              <textarea  rows="3" placeholder="What's on your mind , John?"></textarea>
+              <div class="add-post-links">
+                <a href=""><img src="img/live-video.png" alt=""> Live Video</a>
+                <a href=""><img src="img/photo.png" alt=""> Photo/Video</a>
+                <a href=""><img src="img/feeling.png" alt=""> Feling/Activity</a>
+              </div>
+            </div>
+          </div>
+ 
+
+           <!-- 1st post  -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="img/profile-pic.png" alt="">
+                <div>
+                  <p>John Nicholson</p>
+                  <span>March 20 2023, 13:40 pm</span>
+                </div>
+              </div>
+              <a href=""><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">
+              subcribe <span>@Bohemian On The Road</span> Youtube channel to watch more videos on Adventure and Cycling 
+              <a href="youtube.com/@BohemianOnTheRoad">#Bohemian On The Road</a>
+              <a>#YoutubeChannel</a>
+            </p>
+            <img src="img/bicycle.jpg" alt="" class="post-img">
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="img/like-blue.png" alt="">143</div>
+                <div><img src="img/comments.png" alt="">76</div>
+                <div><img src="img/share.png" alt="">19</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic.png"> <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- second post  -->
+          
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="img/profile-pic.png" alt="">
+                <div>
+                  <p>John Nicholson</p>
+                  <span>April 23 2022, 10:22 am</span>
+                </div>
+              </div>
+              <a href=""><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">
+              Like and Share this video  with Friends<span>@Bohemian On The Road</span>  facebook page on your post. Ask your in the comments
+              <a href="youtube.com/@BohemianOnTheRoad">#Bohemian On The Road</a>
+              <a>#YoutubeChannel</a>
+            </p>
+            <img src="img/feed-image-1.png" alt="" class="post-img">
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="img/like-blue.png" alt="">43</div>
+                <div><img src="img/comments.png" alt="">6</div>
+                <div><img src="img/share.png" alt="">1</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic.png"> <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd post  -->
+
+          
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="img/profile-pic.png" alt="">
+                <div>
+                  <p>John Nicholson</p>
+                  <span>Nov 02 2021, 01:36 pm</span>
+                </div>
+              </div>
+              <a href=""><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">
+              Follow <span>@Bohemian On The Road</span> Facebook page to updates  on Adventure and hiking related posts
+              <a href="youtube.com/@BohemianOnTheRoad">#Bohemian On The Road</a>
+              <a>#YoutubeChannel</a>
+            </p>
+            <img src="img/feed-image-2.png" alt="" class="post-img">
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="img/like-blue.png" alt="">14</div>
+                <div><img src="img/comments.png" alt="">7</div>
+                <div><img src="img/share.png" alt="">9</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic.png"> <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="load-more-btn">Load More</button>
+        </div>
+        <!-- right-sidebar -->
+        <div class="right-sidebar">
+          <div class="sidebar-title">
+            <h4>Events</h4>
+            <a href="/all">See All</a>
+          </div>
+          <div class="event">
+            <div class="left-event">
+              <h3>18</h3>
+              <span>March</span>
+            </div>
+
+            <div class="right-event">
+              <h4>Social Media</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+              <a href="">More Info</a>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="left-event">
+              <h3>22 June</h3>
+              <span>March</span>
+            </div>
+
+            <div class="right-event">
+              <h4>Mobile Marketing</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Silicon Valley </p>
+              <a href="">More Info</a>
+            </div>
+          </div>
+
+          <div class="sidebar-title">
+            <h4>Advertisement</h4>
+            <a href="/all">close</a>
+          </div>
+          <!-- <img src="img/digitalmarketing.jpg" class="sidebar-ads"> -->
+          <img  src="img/advertisement.png" >
+
+          <div class="sidebar-title">
+            <h4>Conversation</h4>
+            <a href="/all">Hide Chat</a>
+          </div>
+
+          <div class="online-list">
+            <div class="online">
+              <img src="img/member-1.png">
+            </div>
+            <p>Alison Mina</p>
+          </div>
+
+          <div class="online-list">
+            <div class="online">
+              <img src="img/member-2.png">
+            </div>
+            <p>Jackson Aston</p>
+          </div>
+          <div class="online-list">
+            <div class="online">
+              <img src="img/member-3.png">
+            </div>
+            <p>Eva Green</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>    
+    <footer class="footer">
+      <p>CopyRight 2023 - Social-Book </p>
+    </footer>
+
+    
+    <script src="https://kit.fontawesome.com/7b92fc10da.js" crossorigin="anonymous"></script>
+  </body>
+</html>
